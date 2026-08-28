@@ -1,0 +1,69 @@
+.itc-slider {
+  position: relative;
+  width: 30%;
+}
+
+.itc-slider-wrapper {
+  overflow: hidden;
+  display: flex;
+  border-radius: 12px;
+}
+
+.itc-slider-items {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+  max-width: 490px;
+  --gap: 7px;
+  gap: var(--gap);
+  margin-bottom: 30px;
+}
+
+.itc-slider-transition-none {
+  transition: none;
+}
+
+.itc-slider-item {
+  flex: 0 0 50%;
+  user-select: none;
+  will-change: transform;
+}
+
+/* кнопки влево и вправо */
+
+.itc-slider-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itc-slider-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.itc-slider-btn-hide {
+  display: none;
+}
+
+.itc-slider-btn-prev {
+  margin-right: 10px;
+}
+
+.itc-slider-btn-next {
+  margin-left: 10px;
+}
+
+.itc-slider-btn-prev {
+    background-image: url('../imgs/photo_slider_btn_left.svg');
+}
+
+.itc-slider-btn-next {
+  background-image: url('../imgs/photo_slider_btn_right.svg');
+}
