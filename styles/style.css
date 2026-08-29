@@ -194,6 +194,7 @@ a {
     margin-bottom: 237px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 80px;
 }
 
 .stories {
@@ -241,6 +242,10 @@ a {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 100px;
+}
+
+.main_advantages {
+    padding-top: 10px;
 }
 
 .section_title {
@@ -1005,12 +1010,11 @@ a {
 
     .header {
         margin-bottom: 40px;
-        height: 80vh;
-        padding-bottom: 250px;
     }
 
-    .img_block {
+    .img_block, .header {
         height: 80vh;
+        padding-bottom: 250px;
     }
 
     .phone_block, .geo_btn, .burger_btn,
@@ -1043,7 +1047,7 @@ a {
     .banner_btn {
         width: 240px;
         padding: 20px;
-        margin-top: 60px;
+        margin-top: 45px;
     }
 
     .story_view,
@@ -1287,7 +1291,7 @@ a {
     }
 
     .header {
-        padding-bottom: 200px;
+        padding-bottom: 160px;
     }
 
     .img_block {
@@ -1327,6 +1331,14 @@ a {
     .advantage,
     .service {
         flex-direction: column;
+    }
+
+    .advantage_long {
+        min-height: 150px;
+    }
+
+    .advantage_img_long {
+        height: 80px;
     }
 
     .advantage_text {
@@ -1385,7 +1397,7 @@ a {
     }
 
     .feedback_form_text {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .contacts {
@@ -1413,6 +1425,14 @@ a {
 
     .img_block, .header {
         padding-bottom: 20px;
+    }
+
+}
+
+@media ((max-width: 400px) and (orientation: portrait)) {
+
+    .img_block, .header {
+        padding-bottom: 60px;
     }
 
 }
