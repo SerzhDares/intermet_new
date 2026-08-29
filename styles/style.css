@@ -20,6 +20,7 @@ a {
 .header {
     margin-bottom: 32px;
     height: 100vh;
+    padding-bottom: 180px;
 }
 
 .img_block {
@@ -31,6 +32,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+    padding-bottom: 180px;
 }
 
 .container {
@@ -238,6 +240,7 @@ a {
     margin-bottom: 330px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 100px;
 }
 
 .section_title {
@@ -1003,6 +1006,7 @@ a {
     .header {
         margin-bottom: 40px;
         height: 80vh;
+        padding-bottom: 250px;
     }
 
     .img_block {
@@ -1201,14 +1205,14 @@ a {
     }
 
     .nav_menu {
-       right: -70%;
-       width: 70%;
+        right: -70%;
+        width: 70%;
     }
 
     .header,
     .img_block {
         height: 60vh;
-        padding-bottom: 50px;
+        padding-bottom: 250px;
     }
 
     .banner_title {
@@ -1273,13 +1277,21 @@ a {
         margin-left: 8px;
     }
 
+    .geo_btn {
+        background-size: 18px 18px;
+    }
+
     .menu_item {
         font-size: 18px;
         padding: 18px;
     }
 
+    .header {
+        padding-bottom: 200px;
+    }
+
     .img_block {
-        background-position: right -140px top 80px;
+        background-position: right -140px center;
     }
 
     .banner_title {
@@ -1393,6 +1405,14 @@ a {
     .copyright_text {
         font-size: 14px;
         text-align: center;
+    }
+
+}
+
+@media ((max-width: 768px) and (orientation: portrait)) {
+
+    .img_block, .header {
+        padding-bottom: 20px;
     }
 
 }
