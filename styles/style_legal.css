@@ -373,6 +373,7 @@ body {
     .banner_title {
         font-size: 52px;
         margin-bottom: 15px;
+        margin-top: 80px;
     }
 
     .grade_widgets {
@@ -499,7 +500,7 @@ body {
 
     .banner_title {
         font-size: 32px;
-        margin-top: 55px;
+        margin-top: 35px;
     }
 
     .platforms_top-block {

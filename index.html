@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <script defer src="js/main.js"></script>
+    <script defer src="js/stories.js"></script>
     <title>Интермет</title>
 </head>
 <body>
@@ -34,13 +35,13 @@
                             <a href="#" class="menu_link">
                                 <li class="menu_item menu_item_last">Цены</li>
                             </a>
-                            <a href="tel:88125619627" class="phone_link bm_phone_link">8 (812) 561-96-27</a>
+                            <a href="tel:+79217850000" class="phone_link bm_phone_link">+7 921 785 00 00</a>
                         </ul>
                     </nav>
                     <div class="nav_params">
                         <button class="btn search_btn" type="button"></button>
                         <div class="phone_block">
-                            <a href="tel:88125619627" class="phone_link">8 (812) 561-96-27</a>
+                            <a href="tel:+79217850000" class="phone_link">+7 921 785 00 00</a>
                             <img src="imgs/arrow_bottom.svg" alt="" class="phone_arrow_icon">
                         </div>
                         <button class="btn geo_btn" type="button"></button>
@@ -60,42 +61,25 @@
         </header>
         <section class="stories_block">
             <div class="container">
-                <div class="stories">
-                    <div class="story">
-                        <div class="story_view">
-                            <img src="imgs/story_img_1.png" alt="Изображение" class="story_img">
+                <div class="stories" id="storiesGrid">
+                </div>
+                <div class="popup-overlay" id="popupOverlay">
+                    <div class="popup-content">
+                        <button class="close-popup" id="closePopupBtn">✕</button>
+                        <div class="story-counter" id="storyCounter">1 / 4</div>
+                        <div class="video-wrapper" id="videoWrapper">
+                            <div class="nav-arrows">
+                                <button class="nav-arrow left" id="prevStory">‹</button>
+                                <button class="nav-arrow right" id="nextStory">›</button>
+                            </div>
+                            <div class="center-play-btn" id="centerPlayBtn">▶</div>
+                            <video id="storyVideo" playsinline preload="metadata"></video>
+                            <div class="progress-container">
+                                <div class="progress-bar" id="progressBar">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                </div>
+                            </div>
                         </div>
-                        <span class="story_text">Заголовок сторис</span>
-                    </div>
-                    <div class="story">
-                        <div class="story_view">
-                            <img src="imgs/story_img_1.png" alt="Изображение" class="story_img">
-                        </div>
-                        <span class="story_text">Заголовок сторис</span>
-                    </div>
-                    <div class="story">
-                        <div class="story_view">
-                            <img src="imgs/story_img_1.png" alt="Изображение" class="story_img">
-                        </div>
-                        <span class="story_text">Заголовок сторис</span>
-                    </div>
-                    <div class="story">
-                        <div class="story_view">
-                            <img src="imgs/story_img_1.png" alt="Изображение" class="story_img">
-                        </div>
-                        <span class="story_text">Заголовок сторис</span>
-                    </div>
-                    <div class="story">
-                        <div class="story_view">
-                            <img src="imgs/story_img_1.png" alt="Изображение" class="story_img">
-                        </div>
-                        <span class="story_text">Заголовок сторис</span>
-                    </div>
-                    <div class="story">
-                        <div class="story_view">
-                            <img src="imgs/story_img_1.png" alt="Изображение" class="story_img">
-                        </div>
-                        <span class="story_text">Заголовок сторис</span>
                     </div>
                 </div>
             </div>
@@ -132,7 +116,7 @@
                             <div class="service_text_block">
                                 <span class="service_text">Прием черного и цветного металла</span>
                                 <span class="service_more">Подробнее</span>
-                                <p class="more_text">Удобный сервис приёма металлолома. Честные цены, быстрый расчёт и вывоз.</p>
+                                <p class="more_text">Быстро и качественно принимаем на площадках почти все виды металлов. В&nbsp;списке более 200 наименований.</p>
                             </div>
                             <img src="imgs/serv_1.svg" alt="Прием металла" class="service_img">
                         </div>
@@ -140,7 +124,7 @@
                             <div class="service_text_block">
                                 <span class="service_text">Вывоз и демонтаж металлоконструкций</span>
                                 <span class="service_more">Подробнее</span>
-                                <p class="more_text">Удобный сервис приёма металлолома. Честные цены, быстрый расчёт и вывоз.</p>
+                                <p class="more_text">Крупный парк техники. У нас есть всё необходимое оборудование для демонтажа, вывоза и переработки металлолома.</p>
                             </div>
                             <img src="imgs/serv_2.svg" alt="Вывоз металла" class="service_img">
                         </div>
@@ -148,7 +132,7 @@
                             <div class="service_text_block">
                                 <span class="service_text">Прием редкоземельных металлов</span>
                                 <span class="service_more">Подробнее</span>
-                                <p class="more_text">Удобный сервис приёма металлолома. Честные цены, быстрый расчёт и вывоз.</p>
+                                <p class="more_text">Принимаем, в том числе, редкоземельные металлы (РЗМ), т.к. в наличии специальное оборудование для спектрального анализа.</p>
                             </div>
                             <img src="imgs/serv_3.svg" alt="Прием редкоземов" class="service_img">
                         </div>
@@ -158,7 +142,7 @@
                             <div class="service_text_block">
                                 <span class="service_text">Химанализ металла</span>
                                 <span class="service_more">Подробнее</span>
-                                <p class="more_text">Удобный сервис приёма металлолома. Честные цены, быстрый расчёт и вывоз.</p>
+                                <p class="more_text">Бесплатно осуществляем спектральный анализ металлолома при сдаче металла на нашу площадку.</p>
                             </div>
                             <img src="imgs/serv_4.svg" alt="Химанализ металла" class="service_img">
                         </div>
@@ -166,7 +150,7 @@
                             <div class="service_text_block">
                                 <span class="service_text">Переработка кабеля</span>
                                 <span class="service_more">Подробнее</span>
-                                <p class="more_text">Удобный сервис приёма металлолома. Честные цены, быстрый расчёт и вывоз.</p>
+                                <p class="more_text">Переработка кабеля осуществляется двумя видами: методом сепарации или разделывается на станках.</p>
                             </div>
                             <img src="imgs/serv_5.svg" alt="Переработка кабеля" class="service_img">
                         </div>
@@ -174,7 +158,7 @@
                             <div class="service_text_block">
                                 <span class="service_text">Переработка стружки</span>
                                 <span class="service_more">Подробнее</span>
-                                <p class="more_text">Удобный сервис приёма металлолома. Честные цены, быстрый расчёт и вывоз.</p>
+                                <p class="more_text">Качественные брикеты из стружки: алюминия, нержавеющей стали, латуни, бронзы или меди. Большие объёмы, индивидуальные условия.</p>
                             </div>
                             <img src="imgs/serv_6.svg" alt="Переработка стружки" class="service_img">
                         </div>
@@ -184,15 +168,15 @@
                             <div class="service_text_block">
                                 <span class="service_text">Переработка аккумуляторов</span>
                                 <span class="service_more">Подробнее</span>
-                                <p class="more_text">Удобный сервис приёма металлолома. Честные цены, быстрый расчёт и вывоз.</p>
+                                <p class="more_text">Быстро разгружаем, оперативно производим взвешивание, разгрузку аккумуляторов: автомобильных, гелевых, щелочных, от погрузчиков, от ИБП, а также в стекле.</p>
                             </div>
                             <img src="imgs/serv_7.svg" alt="Переработка аккумуляторов" class="service_img">
                         </div>
                         <div class="service bottom_service service_8">
                             <div class="service_text_block">
                                 <span class="service_text">Справки об утилизации III-V класс</span>
-                                <span class="service_more">Подробнее</span>
-                                <p class="more_text">Удобный сервис приёма металлолома. Честные цены, быстрый расчёт и вывоз.</p>
+                                <!-- <span class="service_more">Подробнее</span> -->
+                                <p class="more_text"></p>
                             </div>
                             <img src="imgs/serv_8.svg" alt="Справки об утилизации" class="service_img">
                         </div>
@@ -244,7 +228,7 @@
                             <div class="possibility">
                                 <div class="possibility_text_block">
                                     <span class="possibility_title">Брикетирование стружки</span>
-                                    <p class="possibility_text">Чистое, светлое пространство для ожидания, пока мы решаем вашу задачу.</p>
+                                    <p class="possibility_text">Брикетирование стружки: из алюминия, нержавеющей стали, латуни, бронзы или меди более 1000 тонн в год.</p>
                                 </div>
                                 <img src="imgs/pos_1.svg" alt="Брикетирование стружки" class="possibility_img">
                             </div>
@@ -257,7 +241,7 @@
                             <div class="possibility">
                                 <div class="possibility_text_block">
                                     <span class="possibility_title">Крупногабаритный лом</span>
-                                    <p class="possibility_text">Чистое, светлое пространство для ожидания, пока мы решаем вашу задачу.</p>
+                                    <p class="possibility_text">Демонтаж металлоконструкций. Резка сложного и крупногабаритного лома (двигатели и трансформаторы до 25 тонн).</p>
                                 </div>
                                 <img src="imgs/pos_2.svg" alt="Крупногабаритный лом" class="possibility_img">
                             </div>
@@ -270,7 +254,7 @@
                             <div class="possibility">
                                 <div class="possibility_text_block">
                                     <span class="possibility_title">Переработка кабеля</span>
-                                    <p class="possibility_text">Чистое, светлое пространство для ожидания, пока мы решаем вашу задачу.</p>
+                                    <p class="possibility_text">Переработка кабеля осуществляется двумя видами. Сепарация — более 500 тонн в год. Станок – более 400 тонн в год.</p>
                                 </div>
                                 <img src="imgs/pos_3.svg" alt="Переработка кабеля" class="possibility_img">
                             </div>
@@ -283,7 +267,11 @@
                             <div class="possibility">
                                 <div class="possibility_text_block">
                                     <span class="possibility_title">Прессование лома</span>
-                                    <p class="possibility_text">Чистое, светлое пространство для ожидания, пока мы решаем вашу задачу.</p>
+                                    <p class="possibility_text">Прессование лома:</br>
+                                        - Алюминий электротех пакетируется более 500 тонн в&nbsp;год</br>
+                                        - Алюминиевая банка пакетируется более 100 тонн в&nbsp;год</br>
+                                        - Стальной лом категории 12А - по запросу клиента
+                                    </p>
                                 </div>
                                 <img src="imgs/pos_4.svg" alt="Прессование лома" class="possibility_img">
                             </div>
@@ -356,13 +344,13 @@
                         <div class="contacts_part">
                             <span class="contact_title">Телефон</span>
                             <div class="contact contact_phone">
-                                <a href="tel:88124436206" class="phone_contact">8 (812) 443-62-06</a>
+                                <a href="tel:+79217850000" class="phone_contact">+7 921 785 00 00</a>
                             </div>
                         </div>
                         <div class="contacts_part">
                             <span class="contact_title">Время работы</span>
                             <div class="contact contact_timetable">
-                                Пн–Сб: 08:00–18:00
+                                Пн–Вс: 09:00–19:00
                             </div>
                         </div>
                         <div class="contacts_part">
