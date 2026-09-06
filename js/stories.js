@@ -3,38 +3,38 @@
 const storiesData = [{
     id: 1,
     title: 'ЗАГОЛОВОК СТОРИС',
-    preview: './imgs/story_img_1.png',
-    video: './video/1.mp4'
+    preview: '/imgs/story_img_1.png',
+    video: '/video/1.mp4'
 }, {
     id: 2,
     title: 'ЗАГОЛОВОК СТОРИС',
-    preview: './imgs/story_img_2.png',
-    video: './video/2.mp4'
+    preview: '/imgs/story_img_2.png',
+    video: '/video/2.mp4'
 }, {
     id: 3,
     title: 'ЗАГОЛОВОК СТОРИС',
-    preview: './imgs/story_img_3.png',
-    video: './video/3.mp4'
+    preview: '/imgs/story_img_3.png',
+    video: '/video/3.mp4'
 }, {
     id: 4,
     title: 'ЗАГОЛОВОК СТОРИС',
-    preview: './imgs/story_img_4.png',
-    video: './video/4.mp4'
+    preview: '/imgs/story_img_4.png',
+    video: '/video/4.mp4'
 }, {
     id: 5,
     title: 'ЗАГОЛОВОК СТОРИС',
-    preview: './imgs/story_img_1.png',
-    video: './video/5.mp4'
+    preview: '/imgs/story_img_1.png',
+    video: '/video/5.mp4'
 }, {
     id: 6,
     title: 'ЗАГОЛОВОК СТОРИС',
-    preview: './imgs/story_img_1.png',
-    video: './video/6.mp4'
+    preview: '/imgs/story_img_1.png',
+    video: '/video/6.mp4'
 }, {
     id: 7,
     title: 'ЗАГОЛОВОК СТОРИС',
-    preview: './imgs/story_img_1.png',
-    video: './video/7.mp4'
+    preview: '/imgs/story_img_1.png',
+    video: '/video/7.mp4'
 }];
 
 // ---- DOM ----
